@@ -1,0 +1,11 @@
+<ion-view view-title="OBD II Modes">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-icon-right" ng-repeat="mode in modes" type="item-text-wrap" href="{{mode.path}}">
+                <h2>{{mode.name}}</h2>
+                <p>{{mode.desc}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

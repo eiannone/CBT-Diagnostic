@@ -1,0 +1,11 @@
+<ion-view view-title="OBD Show {{(mode == '01')? 'current' : 'freeze frame'}} data">
+    <ion-content>
+        <ion-list id="pid-list">
+            <ion-item class="item-icon-right" ng-repeat="pid in pids" type="item-text-wrap"
+                      href="#/app/obd-pid/{{mode}}/{{pid.id}}">
+                <h2>{{pid.id | hex}} - {{pid.name}}</h2>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

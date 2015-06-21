@@ -1,0 +1,29 @@
+<ion-view view-title="Hardware">
+    <ion-content>
+        <div class="list">
+            <div class="item item-button-right">
+                <h2>Current status - {{btConnected? "CONNECTED" : "Disconnected"}}</h2>
+                <p>{{serviceStatus}}</p>
+                <button class="button button-light" ng-click="refreshStatus()">
+                    <i class="icon ion-loop"></i>
+                </button>
+            </div>
+            <div class="item" ng-show="btConnected" ng-click="btDisconnect()">
+                <h2>Disconnect CBT device</h2>
+                <p>Click to disconnect bluetooth device</p>
+            </div>
+            <div class="item" ng-show="btEnabled && !btConnected" ng-click="btSearch()">
+                <h2>Connect to bluetooth device</h2>
+                <p>Click to scan for CBT devices</p>
+            </div>
+            <div class="item item-toggle">
+                <h2>Auto connect - {{settings.autoConnect? "ON" : "OFF"}}</h2>
+                <p>Auto connect to last used device</p>
+                <label class="toggle toggle-positive">
+                    <input type="checkbox" ng-model="settings.autoConnect" ng-change="cbAutoConnect()"/>
+                    <div class="track"><div class="handle"></div></div>
+                </label>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

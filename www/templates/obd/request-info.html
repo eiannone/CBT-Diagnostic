@@ -1,0 +1,9 @@
+<ion-view view-title="OBD Show vehicle information">
+    <ion-content>
+        <ion-list id="pid-list">
+            <ion-item class="item-icon-right" ng-repeat="pid in pids" type="item-text-wrap">
+                <h2>{{pid.id | hex}} - {{pid.name}}</h2>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

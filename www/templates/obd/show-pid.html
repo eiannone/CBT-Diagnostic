@@ -1,0 +1,13 @@
+<ion-view view-title="OBD Show PID">
+    <ion-content class="padding">
+        <div class="card">
+            <div class="item item-divider">{{pid.id | hex}} - {{pid.name}}</div>
+            <div class="item item-text-wrap">
+                <div class="pid-value" ng-show="pid.data.value">{{pid.data.value}}</div>
+                <div class="pid-unit" ng-show="pid.data.unit">{{pid.data.unit}}</div>
+                <span ng-bind-html="pid.data.content | nl2br"></span>
+            </div>
+            <div class="item item-divider">Address: 0x{{pid.address}} - Bytes: {{pid.bytes}}</div>
+        </div>
+    </ion-content>
+</ion-view>

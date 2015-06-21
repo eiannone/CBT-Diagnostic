@@ -1,0 +1,25 @@
+<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-dark">
+        <h1 class="title">Available bluetooth devices</h1>
+        <button class="button button-icon icon ion-ios-close-outline" ng-click="closeModal()"></button>
+    </ion-header-bar>
+
+    <ion-content padding="true" scroll="true">
+        <ion-list>
+            <ion-item ng-repeat="device in devices" ng-click="btConnect(device)">
+                <h2>{{device.name}}</h2>
+                <p>{{device.id}}</p>
+            </ion-item>
+            <ion-item ng-show="btScanning">
+                <div style="text-align: center;">
+                    Scanning for devices... <ion-spinner></ion-spinner>
+                </div>
+            </ion-item>
+        </ion-list>
+        <div style="text-align: center; margin-top: 1em;">
+            <button class="button icon-left ion-loop" ng-click="btScan()" ng-hide="btScanning">
+                Scan again
+            </button>
+        </div>
+    </ion-content>
+</ion-modal-view>
