@@ -267,7 +267,7 @@ angular.module('cbt')
             if (canPacket.data.length > 8) return $q.reject(errors.INVALID_CAN);
 
             var cmd = new Uint8Array([
-                0xF2, // CMD_SEND_CAN
+                0x02, // CMD_SEND_CAN
                 canPacket.bus,
                 canPacket.id >> 8, canPacket.id & 0xFF,
                 0, 0, 0, 0, 0, 0, 0, 0,
