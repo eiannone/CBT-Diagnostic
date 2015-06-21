@@ -4,6 +4,7 @@ This is a Ionic Framework app wich connects to a [CANBus Triple](http://www.canb
 and does some OBD II communication through CAN protocol.
 
 Currently it has been tested on Android platform, but it should work on iOS and Windows Phone, too.
+
 **NOTE**: You need a firmware which supports CAN mask filtering, such as my [v0.5.1 can-mask branch](https://github.com/eiannone/CANBus-Triple/tree/can-mask).
 
 # Installation
