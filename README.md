@@ -31,3 +31,9 @@ Or you can run it directly to an attached device with:
 ```
 ionic run android
 ```
+
+# Screenshots
+![Menu](http://res.cloudinary.com/duk6jfuuh/image/upload/c_scale,e_shadow,w_300/v1434881198/ss01_menu_asg731.png)
+![Hardware](http://res.cloudinary.com/duk6jfuuh/image/upload/c_scale,e_shadow,w_300/v1434881198/ss03_hardware_nokjoc.png)
+![Connecting](http://res.cloudinary.com/duk6jfuuh/image/upload/c_scale,e_shadow,w_300/v1434881197/ss02_connecting_oti6pf.png)
+![obd](http://res.cloudinary.com/duk6jfuuh/image/upload/c_scale,e_shadow,w_300/v1434881200/ss04_obd_bmoo6g.png)
