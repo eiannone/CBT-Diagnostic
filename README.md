@@ -19,19 +19,19 @@ npm install
 
 Then run the following command to add the platform(s) for which you want to build the app:
 ```
-ionic platform add android
+ionic cordova platform add android
 ```
 
 # Building and running the app
 
 You can build the app with the following command:
 ```
-ionic build android
+ionic cordova build android
 ```
 
 Or you can run it directly to an attached device with:
 ```
-ionic run android
+ionic cordova run android
 ```
 
 # Screenshots
