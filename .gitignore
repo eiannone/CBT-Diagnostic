@@ -2,6 +2,7 @@
 # http://git-scm.com/docs/gitignore
 
 .idea/
+.gradle/
 node_modules/
 platforms/
 plugins/
